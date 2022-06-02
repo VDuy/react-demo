@@ -15,7 +15,7 @@ const SideBar = ({ activeSideBar, setActiveSideBar }) => {
                         <div className="line2"></div>
                     </div>
                 </div>
-                <div style={{ margin: 10 }}>
+                <div >
 
                     <Link to="/excel-topsis" >
                         <div className="sidebar-item">

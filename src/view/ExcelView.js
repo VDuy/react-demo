@@ -3,7 +3,7 @@ import Readexcel from '../components/Readexcel';
 import OpenTopsis from "../components/OpenTopsis"
 import SideBar from '../components/sidebar/Sidebar';
 
-export default class extends React.Component {
+export default class ExcelView extends React.Component {
 
     render() {
         return (

@@ -23,9 +23,9 @@ export default function CriteriaTable(props) {
         <TableHead>
           <TableRow>
             {data_columns.map((column, idx) => (
-              // idx === 0 ?
-              //   <TableCell key={column.name}>{column.name}</TableCell>
-              //   :
+              idx === 0 ?
+                <TableCell key={column.name}>{column.name}</TableCell>
+                :
                 <TableCell align="center" key={column.name}>{column.name}</TableCell>
             ))}
           </TableRow>
