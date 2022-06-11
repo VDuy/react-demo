@@ -73,7 +73,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function PrimarySearchAppBar() {
+export default function Header() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const isMenuOpen = Boolean(anchorEl);
@@ -116,18 +116,20 @@ export default function PrimarySearchAppBar() {
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer">
-            <MenuIcon />
-          </IconButton>
+          <NavLink to="/" >
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              color="white"
+              aria-label="open drawer">
+              <MenuIcon />
+            </IconButton>
+          </NavLink>
           <Typography className={classes.title} variant="h6" noWrap>
             Project Web
           </Typography>
 
-        
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
 

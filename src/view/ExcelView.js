@@ -1,23 +1,16 @@
 import React from 'react';
 import Readexcel from '../components/Readexcel';
-import OpenTopsis from "../components/OpenTopsis"
-import SideBar from '../components/sidebar/Sidebar';
+import Button from '@material-ui/core/Button';
 
-export default class ExcelView extends React.Component {
+export default function ExcelView() {
+    return (
+        <div>
+            <a href='/topsis-demo.xlsx' download>
+                <Button variant="contained" >Download</Button>
+            </a>
+            <Readexcel />
 
-    render() {
-        return (
-            <div>
-                <OpenTopsis />
-                <div style={{
-                    display: "flex",
-                    flexDirection: 'row'
-                }}>
-                    <SideBar />
-                    <Readexcel />
-                </div>
-            </div>
-        )
-    }
+        </div>
+    )
 }
 

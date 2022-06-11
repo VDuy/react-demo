@@ -3,16 +3,13 @@ import './Sidebar.css';
 import { Link } from 'react-router-dom';
 
 const SideBar = ({ activeSideBar, setActiveSideBar }) => {
-
-
     return (
         <div className={activeSideBar ? 'SideBar SideBar-active' : 'SideBar'}>
             <div className={activeSideBar ? 'SideBar-Container SideBar-Container-Active' : 'SideBar-Container'}>
                 <div className="header">
                     <h2 className="logo">Dashboard</h2>
                     <div className="close-btn" onClick={() => setActiveSideBar(false)}>
-                        <div className="line1"></div>
-                        <div className="line2"></div>
+                    
                     </div>
                 </div>
                 <div >
