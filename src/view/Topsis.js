@@ -1,5 +1,5 @@
 import React from 'react';
-import LinearStepper from '../topsis-react/component/LinearStepper';
+import LinearStepper from '@/topsis/component/LinearStepper';
 
 export default function Topsis() {
   return (
