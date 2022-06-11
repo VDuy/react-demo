@@ -1,5 +1,6 @@
 import React from 'react';
-import { DataGrid } from '@material-ui/data-grid';
+import { DataGrid } from '@mui/x-data-grid';
+
 export default function Grid(props){
     return (
       <div style={{width: '100%', height:300}}>

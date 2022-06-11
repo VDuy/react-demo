@@ -1,8 +1,7 @@
 import React from 'react';
-import TextField from "@material-ui/core/TextField";
-import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import TextField from '@mui/material/TextField';
+import { Button, Box } from '@mui/material';
+import { makeStyles } from "@mui/styles";
 import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
@@ -60,9 +59,9 @@ export default function Form(props) {
           value={weight} onChange={handleChange} />
       </Box>
 
-      <Button disabled={props.disabled} 
-      className={styles.button} type="submit" 
-      variant="contained" color="primary"> Add </Button>
+      <Button disabled={props.disabled}
+        className={styles.button} type="submit"
+        variant="contained" color="primary"> Add </Button>
     </form>
   );
 }
