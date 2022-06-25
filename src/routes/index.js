@@ -2,13 +2,13 @@
 
 import ExcelView from "@/view/ExcelView";
 import Homepage from "@/view/Homepage";
-import Topsis from "@/view/Topsis";
+// import Topsis from "@/view/Topsis";
 
 // Public routes
 const publicRoutes = [
     { path: '/', component: Homepage },
     { path: '/excel-topsis', component: ExcelView },
-    { path: '/topsis', component: Topsis, },
+    // { path: '/topsis', component: Topsis, },
     {}
 ]
 
